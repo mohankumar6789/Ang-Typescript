@@ -118,6 +118,15 @@ export class AppComponent implements OnInit {
   //   return this.result;
   //  }
   //  greeting().
+
+  // constructor(){
+  //   interface Employee{
+  //     empID: number;
+  //     empName: String;
+  //     getSalary: (arg0: number) => number;
+  //     getManagerName(arg0: number): string;
+  //   }
+  // }
 }
 
 var i;
@@ -183,3 +192,72 @@ let sum = (x: number, y: number): number => {
 }
 sum(10, 30);
 console.log(res);
+
+let res1;
+let sum1 = (x:number, y:number): number => {
+  return res1  = x + y;
+}
+sum1(10, 20);
+console.log(res1);
+
+//function add(a:string, b:string):string;
+function add(a:number, b:number): number{
+ return a + b;
+}
+
+//add("Hello", "Edureka");
+add(10, 10);
+
+let name:string; 
+name = "Welcome to Typescript";
+console.log("Message:", + name);
+console.log("Message" + " " + name.length)
+
+let str1:string = 'String to Typescript';
+let str2:string = 'String to Typescript Language';
+str1.charAt(0);
+str2.charAt(1)
+console.log(str1.charAt(0));
+console.log(str1.charAt(2));
+console.log(str1.charAt(10));
+
+let str3:string = "Mohan";
+let str4:string = "Kumar";
+console.log(str3.concat(str4));
+console.log(str3.concat(' ', str4));
+//console.log(str1.concat(' ' , to ' '));
+
+//var array_name[:datatype]; declaration
+//array_name = [val1, val2, valn] Initialisation
+
+var arrayname: Array<number> = [505, 405, 305, 205, 105];
+console.log(arrayname.sort());
+
+let arrayname1: Array<string> = ['Tirupur', 'Erode', 'Coimbator'];
+console.log(arrayname1.sort());
+
+let arrayname2:Array<number> = [98, 14, 65, 34];
+console.log(arrayname2.sort());
+console.log(arrayname2.pop());
+console.log(arrayname2.push(12));
+
+var numbers = new Array(1,4,9,7,90);
+var length = numbers.push(10);
+console.log("The new numbers" + " " + numbers);
+length = numbers.push(9);
+console.log("The new numbers" + " " + numbers);
+
+let arrayname3: Array<string> = ['Mohan', 'Kumar', 'Suganth']
+console.log(arrayname3.pop());
+console.log(arrayname3.push('Vijay'));
+console.log(arrayname3);
+
+var empperson = {
+  empname: 'Mohankumar',
+  lastname: 'Sakthivel',
+  empid: 3499
+}
+
+console.log(empperson.empname);
+console.log(empperson.lastname);
+console.log(empperson.empid);

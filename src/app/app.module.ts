@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TypescriptComponent } from './typescript/typescript.component';
+import { ClassextendsComponent } from './classextends/classextends.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TypescriptComponent,
+    ClassextendsComponent
   ],
   imports: [
     BrowserModule,
