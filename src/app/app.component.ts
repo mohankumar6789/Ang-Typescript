@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, Subscriber } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,47 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   ngOnInit(): void { }
   title = 'angtypescript';
+
+  obempname = 'angular';
+
+  constructor(){
+    const testobservable = new Observable(subscriber => {
+      console.log('testobservable');
+      subscriber.next('1');
+      subscriber.next('2');
+      //subscriber.error("error occured");
+      subscriber.complete();
+      subscriber.next('3');
+      setTimeout(() => subscriber.next('4'), 1000)
+      //subscriber.next('4');
+      subscriber.next('5');
+    });
+    testobservable.subscribe(
+      x => {
+        console.log("1st", x);
+      }
+      // error => {
+      //   console.log("error", error);
+      // },
+      // complete => {
+      //   console.log("complete");
+      // }
+    )
+    // console.log('start');
+    // testobservable.subscribe(x => {
+    //   console.log('1st', x);
+    // })
+    console.log('end');
+    // testobservable.subscribe(x => {
+    //   console.log('2nd', x);
+    // })
+    // const test = () =>{
+    //   console.log('normal test');
+    //   return 1;
+    // }
+    // var y = test();
+    // console.log(y);
+  }
 
   //Variables in Typescript
   message: string = "Welcome to Typescript";

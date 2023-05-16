@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TypescriptComponent } from './typescript/typescript.component';
 import { ClassextendsComponent } from './classextends/classextends.component';
+import { ObservableComponent } from './observable/observable.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TypescriptComponent,
-    ClassextendsComponent
+    ClassextendsComponent,
+    ObservableComponent
   ],
   imports: [
     BrowserModule,
