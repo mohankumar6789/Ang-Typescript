@@ -5,8 +5,18 @@ import { Injectable } from '@angular/core';
 })
 
 export class RecordsService {
-  info1: any[] = ['Mohankumar', '3499', 'mohan@aspire.net'];
-  info2: any[] = ['Rameshkumar', '1234', 'ramesh@aspire.net'];
-  info3: any[] = ['Sathish', '5678', 'sathish@aspire.net'];
-  constructor() { }
+  info1: string[] = ['Mohankumar', 'ACE 3499', 'mohankumar.sakthivel@aspiresys.com']
+  info2: string[] = ['karthik', 'ACE1234', 'karthik.prabhakaran@aspiresys.com']
+  info3: string[] = ['Sureshkumar', 'ACE5678', 'sureshkumar.Thangaraj@aspiresys.com']
+  
+  getinfo1(): string[]{
+    return this.info1
+  }
+  getinfo2(): string[]{
+    return this.info2
+  }
+  getinfo3(): string[]{
+    return this.info3
+  }
+  constructor() {}
 }
